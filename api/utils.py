@@ -10,7 +10,7 @@ class Red:
         rds.set(cache_key, data)
         return True
 
-    def get(cache_key, data):
+    def get(cache_key):
         cache_data = rds.get(cache_key)
         if not cache_data:
             return None
